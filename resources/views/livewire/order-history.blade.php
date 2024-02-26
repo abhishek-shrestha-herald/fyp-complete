@@ -8,6 +8,9 @@
                 </div>
                 <div class="w-1/3">
                     <h2 class="text-gray-800 text-xl font-medium uppercase">{{ $orderItem->product->name }}</h2>
+                    <p>
+                        X {{ $orderItem->quantity }}
+                    </p>
                     <p class="text-gray-500 text-sm">
                         Payment:
                         @if ($order->paymentRecord->status->value == 'completed')
@@ -20,7 +23,7 @@
                     </p>
                 </div>
                 <div class="text-primary text-lg font-semibold">
-                    NRs. {{ $orderItem->unit_price }}
+                    NRs. {{ $orderItem->total_price }}
                 </div>
             </div>
         @endforeach

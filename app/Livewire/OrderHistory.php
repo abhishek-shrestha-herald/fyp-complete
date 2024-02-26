@@ -13,6 +13,7 @@ class OrderHistory extends Component
     public function mount()
     {
         $this->orders = auth('farmer')->user()->orders;
+
     }
 
     public function render()

@@ -1,5 +1,5 @@
 <div>
     <a href="#">
-        <img src="assets/images/offer.jpg" alt="ads" class="w-full">
+        <img src="assets/images/banner.gif" alt="ads" class="w-full">
     </a>
 </div>
