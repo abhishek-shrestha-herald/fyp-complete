@@ -12,8 +12,9 @@
     - Password: admin123
     - Token: 987654
 
-## Deployment
-npx localtunnel --port 8000 --subdomain abhishek
+## Serve
+php artisan serve --host=localhost
+npx localtunnel --port 8000 --subdomain abhishek 
 
 
 
