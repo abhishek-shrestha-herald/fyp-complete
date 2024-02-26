@@ -13,7 +13,9 @@ class ProductController extends Controller
 
         return view('single-product', [
             'product' => $product,
-            'relatedProducts' => Product::all()->random(4),
+            'relatedProducts' => Product::all()->random(
+                min(Product::count(), 4)
+            ),
         ]);
     }
 }
